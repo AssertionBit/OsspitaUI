@@ -18,7 +18,23 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@components/*": [ "./src/components/*" ],
+      "@constants/*": [ "./src/constants/*" ],
+      "@context/*": [ "./src/constants/*" ],
+      "@features/*": [ "./src/features/*" ],
+      "@hooks/*": [ "./src/hooks/*" ],
+      "@interfaces/*": [ "./src/interfaces/*" ],
+      "@models/*": [ "./src/models/*" ],
+      "@outlets/*": [ "./src/outlets/*" ],
+      "@pages/*": [ "./src/pages/*" ],
+      "@repositories/*": [ "./src/repositories/*" ],
+      "@router/*": [ "./src/router/*" ],  //  NOTE(assertionbit): Temporal, will be removed in future
+      "@services/*": [ "./src/services/*" ],
+      "@style/*": [ "./src/style/*" ],  // NOTE(assertionbit): Temporal, will be removed in future
+      "@app/*": [ "./src/*" ]
+    }
   },
   "include": ["src"]
 }

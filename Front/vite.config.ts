@@ -1,8 +1,15 @@
-import { defineConfig } from 'vitest/config'
-import react from '@vitejs/plugin-react-swc'
+import { defineConfig } from 'vitest/config';
+import react from '@vitejs/plugin-react-swc';
+import tsconfigPaths from 'vite-tsconfig-paths';
+import { patchCssModules } from 'vite-css-modules';
 
 export default defineConfig({
-  plugins: [react()],
+  // TODO: Test code will eleminated, here... just dont need here...
+  plugins: [
+    tsconfigPaths(),
+    patchCssModules(),
+    react(),
+  ],
   test: {
     globals: true,
     environment: 'jsdom',
@@ -17,10 +24,13 @@ export default defineConfig({
     include: ['react-pdf']
   },
   build: {
+    target: 'es2022',
     commonjsOptions: {
       include: [/react-pdf/, /node_modules/]
     }
   },
+
+  // TODO: WTF?
   server: {
     proxy: {
       '/backend': {
@@ -37,18 +47,3 @@ export default defineConfig({
     }
   }
 })
-
-
-  /*server: {
-    proxy: {
-        '/api': {
-            target: 'https://duckduckgo.com',
-            changeOrigin: true,
-            rewrite: (path) => path.replace(/^\/api/, ''),
-        },
-    },
-  },*/
-  /*server: {
-    host: true, // Allows access from outside the container
-    port: 5173, // Change this if needed
-  },*/
