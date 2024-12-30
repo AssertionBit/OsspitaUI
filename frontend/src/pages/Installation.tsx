@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import Select, { IOption } from "../features/CustomSelect/Select";
+import Select, { IOption } from "../features/CustomSelect/Select.tsx";
 import useFetchModelsList from "../hooks/useFetchModelsList.ts";
 import '../style/Installation.css'
 import { useNavigate } from 'react-router-dom'

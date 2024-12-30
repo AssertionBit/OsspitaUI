@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { useEffect, useRef, useState } from "react"
-import { IConversationWithId } from "../../interfaces/IConversation"
-import { ChatService } from "../../services/ChatService"
-import { ActionType, TAction } from "../../hooks/useActiveConversationReducer"
+import { IConversationWithId } from "../../interfaces/IConversation.ts"
+import { ChatService } from "../../services/ChatService.ts"
+import { ActionType, TAction } from "../../hooks/useActiveConversationReducer.ts"
 import { useServices } from "../../hooks/useServices.ts"
 import DefaultSlotButtonsGroup from "./DefaultSlotButtonsGroup.tsx"
 import ConversationService from "../../services/API/ConversationService.ts"

@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useEffect, useRef, useState } from "react";
-import { IRAGDocument } from "../../interfaces/IRAGDocument";
+import { IRAGDocument } from "../../interfaces/IRAGDocument.ts";
 import { useFetchDocsList } from "../../hooks/useFetchDocsList.ts";
-import { ChatService } from "../../services/ChatService";
-import DocService from "../../services/API/DocService";
+import { ChatService } from "../../services/ChatService.ts";
+import DocService from "../../services/API/DocService.ts";
 import usePagination from "../../hooks/usePagination.ts";
 import DefaultSlotButtonsGroup from "./DefaultSlotButtonsGroup.tsx";
 

@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { useEffect, useRef, useState } from "react"
-import { ChatService } from "../../services/ChatService";
+import { ChatService } from "../../services/ChatService.ts";
 import ImagePreview from "./ImagePreview.tsx";
 import {useImagesStore } from "../../hooks/stores/useImagesStore.ts";
 import { useServices } from "../../hooks/useServices.ts";

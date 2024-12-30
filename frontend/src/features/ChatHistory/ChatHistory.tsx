@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import AnswerRow from "./AnswerRow"
-import QuestionRow from "./QuestionRow"
+import AnswerRow from "./AnswerRow.tsx"
+import QuestionRow from "./QuestionRow.tsx"
 import '../../style/ChatHistory.css'
 import { useEffect, useRef } from "react"
-import { IConversation } from "../../interfaces/IConversation"
+import { IConversation } from "../../interfaces/IConversation.ts"
 import React from "react"
 import { useServices } from "../../hooks/useServices.ts"
 

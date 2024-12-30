@@ -1,12 +1,12 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { useEffect, useRef, useState } from "react";
-import { AIAgent } from "../../models/AIAgent";
-import Select, { IOption } from "../CustomSelect/Select";
+import { AIAgent } from "../../models/AIAgent.ts";
+import Select, { IOption } from "../CustomSelect/Select.tsx";
 import './FormAgentSettings.css'
 import useFetchModelsList from "../../hooks/useFetchModelsList.ts";
-import IFormStructure from "../../interfaces/IAgentFormStructure";
+import IFormStructure from "../../interfaces/IAgentFormStructure.ts";
 import picots from '../../assets/sliderpicots.png'
-import { ChatService } from "../../services/ChatService";
+import { ChatService } from "../../services/ChatService.ts";
 import useFetchAgentsList from "../../hooks/useFetchAgentsList.ts";
 import { useServices } from "../../hooks/useServices.ts";
 
