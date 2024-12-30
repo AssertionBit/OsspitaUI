@@ -12,7 +12,7 @@ dist
 dist-ssr
 *.local
 
-# Editor directories and files
+# ===> Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
@@ -23,10 +23,13 @@ dist-ssr
 *.sln
 *.sw?
 
-# Possibly runtime files?
-front/src/prompts/*
-front/src/style/green
-front/src/components/deprecated
-front/src/deprecated
-front/tofix
-front/coverage
+# ==> Possibly runtime files?
+frontend/src/prompts/*
+frontend/src/style/green
+frontend/src/components/deprecated
+frontend/src/deprecated
+frontend/tofix
+frontend/coverage
+
+# ==> Runtime files
+.local
