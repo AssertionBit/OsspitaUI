@@ -1,0 +1,19 @@
+{
+  "name": "osspitaui",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "(cd Back && bun dev) | (cd Front && bun dev)"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "vite-tsconfig-paths": "^5.1.4"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "workspaces": [
+    "./Back",
+    "./Front"
+  ]
+}

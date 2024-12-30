@@ -1,21 +1,11 @@
-Release : Alpha 1.0.5
 
-<div style="display:flex; width:100%; column-gap:16px; margin-bottom:12px;">
-    <span>Compatibility :</span>
-    <img style="width:24px; height:24px;" src="https://github.com/ask0ldd/OsspitaUI/blob/main/Front/src/assets/windows.png">
-    <img style="width:24px; height:24px;" src="https://github.com/ask0ldd/OsspitaUI/blob/main/Front/src/assets/chrome.png">
-    <img style="width:24px; height:24px;" src="https://github.com/ask0ldd/OsspitaUI/blob/main/Front/src/assets/firefox.png">
-    <img style="width:24px; height:24px;" src="https://github.com/ask0ldd/OsspitaUI/blob/main/Front/src/assets/brave.png">
-    <span style="display:flex; height:100%;">&</span>
-    <img style="width:24px; height:24px;" src="https://github.com/ask0ldd/OsspitaUI/blob/main/Front/src/assets/ubuntu.png">
-    <img style="width:24px; height:24px;" src="https://github.com/ask0ldd/OsspitaUI/blob/main/Front/src/assets/chrome.png">
-    <img style="width:24px; height:24px;" src="https://github.com/ask0ldd/OsspitaUI/blob/main/Front/src/assets/firefox.png">
-    <img style="width:24px; height:24px;" src="https://github.com/ask0ldd/OsspitaUI/blob/main/Front/src/assets/brave.png">
+<div align="center">
+    <h1>OSSPITA</h1>
+    <i>Run your AI assistant locally and experience an intuitive interface that allows you to tune all your agents with just a few clicks. Enjoy guaranteed privacy at no cost.</i>
+    </br></br>
 </div>
 
-# OSSPITA : Run your AI assistant locally and experience an intuitive interface that allows you to tune all your agents with just a few clicks. Enjoy guaranteed privacy at no cost.
-
-OSSPITA is a lightweight, fully local, open-source desktop interface that enables users to interact for free and in real time with various Open-Source LLMs. Leveraging the [Ollama API](https://github.com/ollama/ollama), OSSPITA provides a user-friendly experience for engaging with cutting-edge AI technology.
+**OSSPITA** - is a lightweight, fully local, open-source desktop interface that enables users to interact for free and in real time with various Open-Source LLMs. Leveraging the [Ollama API](https://github.com/ollama/ollama), OSSPITA provides a user-friendly experience for engaging with cutting-edge AI technology.
 
 ![osspita main](https://github.com/ask0ldd/OsspitaUI/blob/main/Front/src/assets/screenshot2.png "osspita main")
 
@@ -73,7 +63,7 @@ _Click the image above to watch the video on YouTube_
 - At least one open source model.
 - Nvidia CUDA if needed : https://developer.nvidia.com/cuda-downloads
 
-Models Recommandations :
+Models Recommandations:
 
 | GPU VRAM   | Model            | Purpose        | Link                                                                 |
 | ---------- | ---------------- | -------------- | -------------------------------------------------------------------- |

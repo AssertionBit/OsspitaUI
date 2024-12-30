@@ -1,0 +1,19 @@
+services:
+  backend:
+    build:
+      context: ./Back
+      dockerfile: ./Back/Containerfile
+    ports:
+      - 5174
+
+  ollama:
+    image: ollama/ollama
+    ports:
+      - 11434:11434
+    volumes:
+      - ollama:/root/.ollama:rw
+    restart: unless-stopped
+
+
+volumes:
+  ollama:

@@ -1,4 +1,4 @@
-# Logs
+# ===> Logs
 logs
 *.log
 npm-debug.log*
@@ -7,15 +7,12 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-front/node_modules
-back/node_modules
-front/dist
-back/dist
-front/dist-ssr
-back/dist-ssr
+node_modules
+dist
+dist-ssr
 *.local
 
-# Editor directories and files
+# ===> Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
@@ -26,9 +23,13 @@ back/dist-ssr
 *.sln
 *.sw?
 
-front/src/prompts/*
-front/src/style/green
-front/src/components/deprecated
-front/src/deprecated
-front/tofix
-front/coverage
+# ==> Possibly runtime files?
+frontend/src/prompts/*
+frontend/src/style/green
+frontend/src/components/deprecated
+frontend/src/deprecated
+frontend/tofix
+frontend/coverage
+
+# ==> Runtime files
+.local

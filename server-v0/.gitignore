@@ -1,0 +1,9 @@
+speecht5_tts
+scrapeddatas.txt
+embeddings.db
+sandbox.*
+*.wav
+images/*
+!images/.gitkeep
+deprecated
+test.js

@@ -1,0 +1,30 @@
+
+FROM oven/bun:1 AS base
+
+ENV NODE_ENV=production
+
+FROM base AS build
+
+WORKDIR /src
+
+COPY . /src
+
+RUN bun install \
+        --frozen-lockfile \
+        --production \
+    && \
+    bun build \
+        --target bun \
+        --compile \
+        --outfile osspita \
+        osspita.js
+
+FROM alpine:latest AS production
+
+ENV NODE_ENV=production
+
+COPY --from=build /src/osspita /usr/bin/osspita
+
+USER osspita
+EXPOSE 5174
+CMD [ "/usr/bin/osspita" ]
