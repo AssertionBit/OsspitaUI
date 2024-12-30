@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "paths": {
+            "@interfaces/*": [ "./interfaces/*" ],
+            "@services/*": [ "./services/*", ],
+            "@utils/*": [ "./utils/*" ]
+        }
+    }
+}

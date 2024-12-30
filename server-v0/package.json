@@ -4,8 +4,7 @@
   "description": "",
   "main": "scrapeAPI.js",
   "scripts": {
-    "dev": "bun osspita.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "export OSSPITA_HOME_PATH=playground/config.toml && bun run main.ts"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +18,8 @@
     "lokijs": "^1.5.12",
     "multer": "^1.4.5-lts.1",
     "puppeteer": "^23.10.1",
+    "toml": "^3.0.0",
+    "tslog": "^4.9.3",
     "turndown": "^7.2.0",
     "wavefile": "^11.0.0"
   },

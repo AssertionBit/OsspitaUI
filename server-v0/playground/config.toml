@@ -1,0 +1,3 @@
+home-path = "playground"
+logging-path = "playground/logs"
+runtime-path = "playground/runtime"
